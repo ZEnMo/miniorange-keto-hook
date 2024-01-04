@@ -1,0 +1,28 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ory/client-php.git"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ory/client-php": "*@dev"
+  },
+  "require-dev": {
+    "roots/wordpress": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zenmo\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true
+    },
+    "platform": {
+      "php": "7.4.33"
+    }
+  }
+}
